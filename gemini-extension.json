@@ -1,0 +1,45 @@
+{
+  "name": "alphaosint-jobs",
+  "version": "1.0.0",
+  "description": "Six remote MCP servers for job-market data: LinkedIn Jobs, Google Jobs, Wellfound, Ashby boards, SAP SuccessFactors and isolved career sites. Pay per result on Apify with your own token.",
+  "settings": [
+    {
+      "name": "Apify API token",
+      "description": "Your Apify API token from https://console.apify.com/settings/integrations. Each tool call runs an Actor billed to that account; the free plan includes $5 of monthly credit.",
+      "envVar": "APIFY_TOKEN",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "linkedin-jobs": {
+      "description": "LinkedIn jobs by keyword and location: title, company, seniority, type, posting date, applicants, salary when shown, full description.",
+      "httpUrl": "https://mcp.apify.com/?tools=johnvc/linkedin-jobs-api",
+      "headers": { "Authorization": "Bearer $APIFY_TOKEN" }
+    },
+    "google-jobs": {
+      "description": "Google Jobs listings for a query and location, with highlights and direct apply links.",
+      "httpUrl": "https://mcp.apify.com/?tools=johnvc/Google-Jobs-Scraper",
+      "headers": { "Authorization": "Bearer $APIFY_TOKEN" }
+    },
+    "wellfound-jobs": {
+      "description": "Wellfound (AngelList) startup jobs with salary and equity ranges parsed.",
+      "httpUrl": "https://mcp.apify.com/?tools=johnvc/wellfound-jobs-api",
+      "headers": { "Authorization": "Bearer $APIFY_TOKEN" }
+    },
+    "ashby-jobs": {
+      "description": "Openings from any company's Ashby job board, including employer-published salary data.",
+      "httpUrl": "https://mcp.apify.com/?tools=johnvc/ashby-job-board-scraper",
+      "headers": { "Authorization": "Bearer $APIFY_TOKEN" }
+    },
+    "successfactors-jobs": {
+      "description": "Jobs from SAP SuccessFactors public career sites.",
+      "httpUrl": "https://mcp.apify.com/?tools=johnvc/sap-successfactors-jobs-api",
+      "headers": { "Authorization": "Bearer $APIFY_TOKEN" }
+    },
+    "isolved-jobs": {
+      "description": "Jobs from isolved and ApplicantPro career sites, with tenant discovery.",
+      "httpUrl": "https://mcp.apify.com/?tools=johnvc/isolved-jobs-api",
+      "headers": { "Authorization": "Bearer $APIFY_TOKEN" }
+    }
+  }
+}
