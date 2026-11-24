@@ -1,10 +1,10 @@
 {
   "mcpServers": {
-    "linkedin-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=johnvc/linkedin-jobs-api" },
-    "google-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=johnvc/Google-Jobs-Scraper" },
-    "wellfound-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=johnvc/wellfound-jobs-api" },
-    "ashby-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=johnvc/ashby-job-board-scraper" },
-    "successfactors-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=johnvc/sap-successfactors-jobs-api" },
-    "isolved-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=johnvc/isolved-jobs-api" }
+    "linkedin-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/linkedin-jobs-api" },
+    "google-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/Google-Jobs-Scraper" },
+    "wellfound-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/wellfound-jobs-api" },
+    "ashby-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/ashby-job-board-scraper" },
+    "successfactors-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/sap-successfactors-jobs-api" },
+    "isolved-jobs": { "type": "http", "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/isolved-jobs-api" }
   }
 }

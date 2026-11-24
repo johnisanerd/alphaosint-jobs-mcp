@@ -10,32 +10,32 @@ These are remote MCP servers hosted by Apify. Nothing is installed or run locall
   "mcpServers": {
     "linkedin-jobs": {
       "type": "streamableHttp",
-      "url": "https://mcp.apify.com/?tools=johnvc/linkedin-jobs-api",
+      "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/linkedin-jobs-api",
       "headers": { "Authorization": "Bearer <APIFY_TOKEN>" }
     },
     "google-jobs": {
       "type": "streamableHttp",
-      "url": "https://mcp.apify.com/?tools=johnvc/Google-Jobs-Scraper",
+      "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/Google-Jobs-Scraper",
       "headers": { "Authorization": "Bearer <APIFY_TOKEN>" }
     },
     "wellfound-jobs": {
       "type": "streamableHttp",
-      "url": "https://mcp.apify.com/?tools=johnvc/wellfound-jobs-api",
+      "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/wellfound-jobs-api",
       "headers": { "Authorization": "Bearer <APIFY_TOKEN>" }
     },
     "ashby-jobs": {
       "type": "streamableHttp",
-      "url": "https://mcp.apify.com/?tools=johnvc/ashby-job-board-scraper",
+      "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/ashby-job-board-scraper",
       "headers": { "Authorization": "Bearer <APIFY_TOKEN>" }
     },
     "successfactors-jobs": {
       "type": "streamableHttp",
-      "url": "https://mcp.apify.com/?tools=johnvc/sap-successfactors-jobs-api",
+      "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/sap-successfactors-jobs-api",
       "headers": { "Authorization": "Bearer <APIFY_TOKEN>" }
     },
     "isolved-jobs": {
       "type": "streamableHttp",
-      "url": "https://mcp.apify.com/?tools=johnvc/isolved-jobs-api",
+      "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/isolved-jobs-api",
       "headers": { "Authorization": "Bearer <APIFY_TOKEN>" }
     }
   }
